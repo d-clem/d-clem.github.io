@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/containers.css">
+
+    <script src="./js/script.js" defer></script>
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div class="container-welcome">
+
+        <div class="text-center center welcome">
+            Bienvenue sur mon Portfolio
+            <br>    
+            Vous pourrez trouver ici mes projets les plus importants
+        </div>
+        
+        <div class="navigation">
+            <p>Où aller?</p>
+            
+            <a href="#presentation">
+                <button>
+                    Présentation
+                </button>
+            </a>
+                
+            <a href="#projects">
+                <button>
+                    Projets
+                </button>
+            </a>
+
+            <a href="#contact">
+                <button>
+                    Contact
+                </button>
+            </a>
+
+        </div>
+        
+    </div>
+
+    <div id="presentation"></div>
+
+    <div class="container-presentation center" >
+        <div class="presentation center text-center">
+            Bonjour, je m'appelle Clément, je suis actuellement étudiant à l'IUT de Rodez.
+            <br><br>
+            Coder est une de mes passions c'est pourquoi j'essaie de coder des projets liés à mes autres passions qui sont les Quilles de Huit et la licence de jeux Splatoon.
+            <br><br>
+            Vous trouverez ci-dessous mes projets les plus aboutis ainsi que des liens vers le code source de ces derniers.
+        </div>
+        <div class="center">
+            <img src="./images/avatar_mini.png" alt="">
+        </div>
+    </div>
+
+    
+    
+    <div id="projects"></div>
+    <div class="container-projects">
+        <div class="project-card animation">
+            <div class="card-text center text-center">
+                Ce projet est une application mobile codée en python permettant de noter les scores d'une partie de quilles de huit.
+                <br><br>
+                C'est une application assez simple qui permet de stocker les scores ainsi que le nom des joueurs mais qui ne gère pas l'aspect responsive et qui va pas bien supporter un grand nombre de parties a afficher.
+                <br><br>
+                Il faut également un interpréteur python pour la lancer.
+                <br><br>
+                Lien vers le répo Github : 
+                <br><br>
+                <a href="https://github.com/cleeem/projet-quilles" target="_blank">
+                    <button>
+                        Cliquez ici
+                    </button>
+                </a>
+            </div>
+
+            <div class="center">
+                <img class="card-image" src="./images/quilles.png" alt="image de mon projet de scores de quilles de huit en python">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-text center text-center">
+                Ce projet est une application mobile très similaire à la précédente, cependant elle est codée comme une application web (html, css, js) mais compilée en .apk grace à Cordova.
+                <br><br>
+                Cette application permet de sélectionner le nombre de joueurs et de parties dans un menu. Elle permet également de colorer les cases de scores en fonction de la différence entre le score du joueur et le score recommendé pour une partie à 50.
+                <br><br>
+                Lien vers le répo Github : 
+                <br><br>
+                <a href="http://github.com/cleeem/quilles-score" target="_blank">
+                    <button>
+                        Cliquez ici
+                    </button>
+                </a>
+            </div>
+
+            <div class="center">
+                <img class="card-image" src="./images/quilles_web.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="card-text center text-center">
+                Cette application est une application pour PC codée en python permettant de se connecter à l'application mobile Nintendo Switch Online.
+                <br><br>
+                Elle possède seulement une partie des fonctionnalités de l'application de base : 
+                <br><br>
+                 - Consulter le récapitulatif d'une des 50 dernières parties
+                <br>
+                 - Consulter le magasin de l'application
+                 <br><br>
+                 Lien vers le répo Github : 
+                 <br><br>
+                 <a href="http://github.com/cleeem/pc_version" target="_blank">
+                     <button>
+                         Cliquez ici
+                     </button>
+                 </a>
+            </div>
+
+            <div class="center">
+                <img class="card-image" src="./images/splatnet_pc.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br><br>
+
+    <div id="contact"></div>
+    <div class="footer">
+        <div class="center title">
+            Me contacter
+        </div>
+        <div class="footer-list">
+
+            <a href="https://twitter.com/clem_spl" target="_blank">
+                <div class="contact">
+                    Twitter
+                        <img src="./images/Twitter.svg" class="image-contact" alt="logo twitter">
+                </div>
+            </a>
+
+            <a href="https://discord.gg/GZWYF4K72Y" target="_blank">
+                <div class="contact">
+                    Discord
+                        <img src="./images/Discord.svg" class="image-contact" alt="logo discord">
+                </div>
+            </a>
+
+            <a href="https://github.com/cleeem" target="_blank">
+                <div class="contact">
+                    Github
+                        <img src="./images/GitHub.svg" class="image-contact" alt="logo github">
+                </div>
+            </a>
+
+            <div class="contact-link">
+                <a href="https://twitter.com/clem_spl" target="_blank">@clem_spl</a>
+            </div>
+            <div class="contact-link">
+                <a href="https://discord.gg/GZWYF4K72Y" target="_blank">serveur portfolio</a>
+            </div>
+            <div class="contact-link">
+                <a href="https://github.com/cleeem" target="_blank">cleeem</a>
+            </div>
+
+
+        </div>
+
+        <div id="creation">
+            Site crée par Clément Denamiel
+        </div>
+
+    </div>
+
+</body>
+</html>

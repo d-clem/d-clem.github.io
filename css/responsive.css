@@ -1,0 +1,50 @@
+
+@media screen and (max-width: 850px) {
+    body {
+        gap: 1em;
+    }
+
+    .navigation {
+        height: 250px;
+        flex-direction: column;
+    }
+    .navigation > a {
+        width: 50%;
+        height: 15%;
+    }
+
+    .container-presentation {
+        margin-top: 0% !important;
+        display: flex !important;
+        flex-direction: column-reverse;
+        gap: 1em;
+    }
+
+    .center {
+        flex-direction: row;
+    }
+
+    .project-card {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        gap: 1em;
+    }
+
+    .card-image:hover {
+        transform: none !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .footer-list {
+        grid-template-columns: 1fr !important;
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    .contact-link {
+        display: none;
+    }
+}
+
