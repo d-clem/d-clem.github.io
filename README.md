@@ -1,2 +1,3 @@
 # portfolio
- mon portfolio qui contient mes projets perso et mes porjets de cours
+Portfolio qui contient mes projets perso ainsi que mes porjets de cours  
+Site réalisé en HTML/CSS/JS sans framework
