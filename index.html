@@ -6,11 +6,20 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/containers.css">
+    <link rel="stylesheet" href="css/switch.css">
 
     <script src="./js/script.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
+
+    <div class="menu">
+        <label class="switch">
+            <input type="checkbox" checked id="buttonSwitch">
+            <span class="slider round"></span>
+        </label>
+
+    </div>
 
     <div class="container-welcome">
 
@@ -20,23 +29,23 @@
             Vous pourrez trouver ici mes projets les plus importants
         </div>
         
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <p>Où aller?</p>
             
             <a href="#presentation">
-                <button>
+                <button class="button-navigation">
                     Présentation
                 </button>
             </a>
                 
             <a href="#projects">
-                <button>
+                <button class="button-navigation">
                     Projets
                 </button>
             </a>
 
             <a href="#contact">
-                <button>
+                <button class="button-navigation">
                     Contact
                 </button>
             </a>
@@ -136,7 +145,7 @@
     <br><br><br><br>
 
     <div id="contact"></div>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="center title">
             Me contacter
         </div>

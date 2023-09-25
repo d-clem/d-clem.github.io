@@ -1,3 +1,16 @@
+.menu {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+
+    width: calc(6vw);
+    height: calc(7vh) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-welcome {
     margin-top: 20px;
     display: grid;
