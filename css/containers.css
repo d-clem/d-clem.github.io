@@ -3,8 +3,8 @@
     bottom: 5%;
     right: 5%;
 
-    width: calc(6vw);
-    height: calc(7vh) ;
+    width: 70px;
+    height: 35px;
 
     display: flex;
     justify-content: center;
