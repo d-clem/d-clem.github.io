@@ -5,188 +5,252 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/containers.css">
-    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/all.css">
 
-    <script src="./js/script.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
 
-    <div class="menu">
-        <label class="switch">
-            <input type="checkbox" checked id="buttonSwitch">
-            <span class="slider round"></span>
-        </label>
+    <header id="accueil">
+        <h1>
+            Bonjour, bienvenue sur mon portfolio !
+        </h1>
 
-    </div>
 
-    <div class="container-welcome">
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#presentation">Présentation</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
 
-        <div class="text-center center welcome">
-            Bienvenue sur mon Portfolio
-            <br>    
-            Vous pourrez trouver ici mes projets les plus importants
-        </div>
-        
-        <div class="navigation" id="navigation">
-            <p>Où aller?</p>
-            
-            <a href="#presentation">
-                <button class="button-navigation">
-                    Présentation
-                </button>
-            </a>
-                
-            <a href="#projects">
-                <button class="button-navigation">
-                    Projets
-                </button>
-            </a>
+        </nav>
 
-            <a href="#contact">
-                <button class="button-navigation">
-                    Contact
-                </button>
-            </a>
+    </header>
 
-        </div>
-        
-    </div>
+    <a href="#accueil" id="up">
+        <span class="fa fa-arrow-up"></span>
+    </a>
 
-    <div id="presentation"></div>
+    <!-- presentation -->
+    <div class="split" id="presentation">
 
-    <div class="container-presentation center" >
-        <div class="presentation center text-center">
-            Bonjour, je m'appelle Clément, je suis actuellement étudiant à l'IUT de Rodez.
-            <br><br>
-            Coder est une de mes passions c'est pourquoi j'essaie de coder des projets liés à mes autres passions qui sont les Quilles de Huit et la licence de jeux Splatoon.
-            <br><br>
-            Vous trouverez ci-dessous mes projets les plus aboutis ainsi que des liens vers le code source de ces derniers.
-        </div>
-        <div class="center">
-            <img src="./images/avatar_mini.png" alt="">
-        </div>
-    </div>
+        <section>
+            <h2>Présentation</h2>
 
-    
-    
-    <div id="projects"></div>
-    <div class="container-projects">
-        <div class="project-card animation">
-            <div class="card-text center text-center">
-                Ce projet est une application mobile codée en python permettant de noter les scores d'une partie de quilles de huit.
+            <p>
+                Bonjour, je m'appelle Clément, je suis actuellement étudiant à l'IUT de Rodez.
                 <br><br>
-                C'est une application assez simple qui permet de stocker les scores ainsi que le nom des joueurs mais qui ne gère pas l'aspect responsive et qui va pas bien supporter un grand nombre de parties a afficher.
+                Coder est une de mes passions c'est pourquoi j'essaie de coder des projets liés à mes autres passions qui sont les Quilles de Huit, la licence de jeux Splatoon ou encore l'artiste Winnterzuko.
                 <br><br>
-                Il faut également un interpréteur python pour la lancer.
+                Vous trouverez ci-dessous mes projets personnels et mes projets scolaires.
                 <br><br>
-                Lien vers le répo Github : 
+                Cependant vous ne pourrez consulter le code de mes projets personnels car les projets scolaires sont des projets de groupe.    
                 <br><br>
-                <a href="https://github.com/cleeem/projet-quilles" target="_blank">
-                    <button>
-                        Cliquez ici
-                    </button>
-                </a>
-            </div>
+                Je suis actuellement à la recherche d'un stage en entreprise du 8 avril au 14 juin <span>2024</span>.
+            </p>
 
-            <div class="center">
-                <img class="card-image" src="./images/quilles.png" alt="image de mon projet de scores de quilles de huit en python">
-            </div>
-        </div>
+        </section>
 
-        <div class="project-card">
-            <div class="card-text center text-center">
-                Ce projet est une application mobile très similaire à la précédente, cependant elle est codée comme une application web (html, css, js) mais compilée en .apk grace à Cordova.
-                <br><br>
-                Cette application permet de sélectionner le nombre de joueurs et de parties dans un menu. Elle permet également de colorer les cases de scores en fonction de la différence entre le score du joueur et le score recommendé pour une partie à 50.
-                <br><br>
-                Lien vers le répo Github : 
-                <br><br>
-                <a href="http://github.com/cleeem/quilles-score" target="_blank">
-                    <button>
-                        Cliquez ici
-                    </button>
-                </a>
-            </div>
-
-            <div class="center">
-                <img class="card-image" src="./images/quilles_web.jpg" alt="">
-            </div>
-        </div>
-
-
-        <div class="project-card">
-            <div class="card-text center text-center">
-                Cette application est une application pour PC codée en python permettant de se connecter à l'application mobile Nintendo Switch Online.
-                <br><br>
-                Elle possède seulement une partie des fonctionnalités de l'application de base : 
-                <br><br>
-                 - Consulter le récapitulatif d'une des 50 dernières parties
+        <section>
+            <img src="./ressources/images/photo.png" alt="" id="imagePresentation">
+            <p>
+                <span class="fa fa-envelope"></span>
+                clement.denamiel@iut-rodez.fr
                 <br>
-                 - Consulter le magasin de l'application
-                 <br><br>
-                 Lien vers le répo Github : 
-                 <br><br>
-                 <a href="http://github.com/cleeem/pc_version" target="_blank">
-                     <button>
-                         Cliquez ici
-                     </button>
-                 </a>
-            </div>
+                <span class="fa fa-envelope"></span>
+                clement.denamiel@gmail.com
+            </p>
+        </section>
 
-            <div class="center">
-                <img class="card-image" src="./images/splatnet_pc.png" alt="">
-            </div>
-        </div>
+
     </div>
-
 
     <br><br><br><br>
 
-    <div id="contact"></div>
-    <div class="footer" id="footer">
-        <div class="center title">
-            Me contacter
-        </div>
-        <div class="footer-list">
+    <!-- projets -->
+    <main id="projets">
 
-            <a href="https://twitter.com/d_clem_0" target="_blank">
-                <div class="contact">
-                    Twitter
-                    <img src="./images/Twitter.svg" class="image-contact" alt="logo twitter">
-                </div>
+        <h2>Projets personnels</h2>
+
+        <section class="projet">
+
+            <div class="image-projet">
+                <img src="./ressources/images/projets/projet_zuko.png" alt="screenshot d'une page d'un site web ayant pour sujet le rappeur Winnterzuko">
+            </div>
+
+            <div class="description-projet description-droite">
+                <p class="icon-list">
+                    <span class="fa-brands fa-html5 icon-dev"></span>
+                    <span class="fa-brands fa-css3 icon-dev"></span>
+                    <span class="fa-brands fa-php icon-dev"></span>
+                    <span>2023</span>
+                </p>
+
+                <p>
+                    Un site web fait en un week-end permettant de découvrir l'artiste Winnterzuko.
+                    Il permet de découvrir sa discographie et d'écouter un extrait de ses musiques.
+                </p>
+
+                <p class="links">
+                    <a href="https://github.com/d-clem/winnterzuko" target="_blank">
+                        <span class="fa-brands fa-github icon-dev"></span> Repo Github
+                    </a>
+                    &nbsp;
+                    <a href="https://wzuko-app.alwaysdata.net/" target="_blank">
+                        Lien vers le site
+                        <span class="fa-solid fa-external-link icon-dev"></span> 
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="projet">
+            <div class="description-projet description-gauche">
+                
+                <p class="icon-list">
+                    <span class="fa-brands fa-html5 icon-dev"></span>
+                    <span class="fa-brands fa-css3 icon-dev"></span>
+                    <span class="fa-brands fa-js icon-dev"></span>
+                    <span>2022</span>
+                </p>
+
+                <p>
+                    Une application mobile permettant de noter les scores de parties de quilles de huit.
+                    Elle est codée en HTML, CSS et Javascript mais compilée en application mobile grâce à Cordova.
+                </p>
+
+                <p>
+                    <a href="https://github.com/cleeem/quilles-score" target="_blank">
+                        <span class="fa-brands fa-github icon-dev"></span> Repo Github
+                    </a>
+                </p>
+            </div>
+
+            <div class="image-projet">
+
+                <img src="./ressources/images/projets/quilles_web.jpg" alt="image d'une application mobile pour noter des scores de quilles de huit">
+
+            </div>
+        </section>
+
+
+        <section class="projet">
+            <div class="image-projet">
+                <img src="./ressources/images/projets/splatnet_pc.png" alt="image d'une application PC liée à l'application Nintendo Switch Online">
+            </div>
+
+            <div class="description-projet description-droite">
+                <p class="icon-list">
+                    <span class="fa-brands fa-python icon-dev"></span>
+                    <span>2022</span>
+                </p>
+
+                <p>
+                    Une application PC faite avec la bibliothèque customTkinter permettant de voir les statistiques de son compte Splatoon 3.
+                    Elle utilise l'API de Splatnet 3 pour récupérer les données.
+                </p>
+
+                <p class="links">
+                    <a href="https://github.com/cleeem/pc_version" target="_blank">
+                        <span class="fa-brands fa-github icon-dev"></span> 
+                        Repo Github
+                    </a>
+
+                    <a href="https://github.com/frozenpandaman/s3s">
+                        <span class="fa-solid fa-external-link icon-dev"></span> 
+                        Repo de l'API
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <h2>Projets scolaires</h2>
+
+        <section class="projet">
+            <div class="description-projet description-gauche">
+                <p class="icon-list">
+                    <span class="fa-brands fa-java icon-dev"></span>
+                    <span class="icon-dev">
+                        <img src="./ressources/images/JavaFX.svg" alt="">
+                    </span>
+                    <span>2023</span>
+                </p>
+
+                <p>
+                    Un jeu de quiz en JavaFX permettant de faire des quiz pour n'importe quel sujet.
+                    Un quiz est composé de 5, 10 ou 20 questions à choix multiples.
+                    Les utilisateurs peuvent créer des catégories ou questions avec jusqu'à 4 réponses fausses.
+                    Ils peuvent ensuite se les partager de manière chiffrée dans un même réseau.
+                </p>
+
+            </div>
+
+            <div class="image-projet">
+                <img src="./ressources/images/projets/projet_quiz.png" alt="screenshot d'une application pc de quiz pour réviser">
+            </div>
+        </section>
+
+        <section class="projet">
+            <div class="image-projet">
+                <img src="./ressources/images/projets/labyrinthe.png" alt="screenshot d'un jeu de labyrinthe en console">
+            </div>
+
+            <div class="description-projet description-droite">
+                <p class="icon-list">
+                    <span class="fa-brands fa-java icon-dev"></span>
+                    <span>2022</span>
+                </p>
+
+                <p>
+                    Un jeu de labyrinthe en console codé en Java.
+                    Le but est de trouver la sortie du labyrinthe.
+                    Le joueur peut se déplacer dans les 4 directions.
+                </p>
+        </section>
+    </main>
+
+    <br><br><br>
+
+    <!-- footer -->
+    <footer id="contact">
+
+        <h2>Contact et Réseaux</h2>
+        <div class="contact">
+
+            <p>
+                <span class="fa fa-envelope icon"></span>
+                clement.denamiel@iut-rodez.fr
+                <br>
+                
+                <span class="fa fa-envelope icon"></span>
+                clement.denamiel@gmail.com
+            </p>
+            
+            <a href="https://www.linkedin.com/in/clement-denamiel" target="_blank">
+                <span class="fa-brands fa-linkedin icon"></span>
+                Clement Denamiel
             </a>
 
             <a href="https://github.com/d-clem" target="_blank">
-                <div class="contact">
-                    Github
-                    <img src="./images/GitHub.svg" class="image-contact" alt="logo github">
-                </div>
+                <span class="fa-brands fa-github icon"></span>
+                d-clem
             </a>
-
-            <div class="contact-link">
-                <a href="https://twitter.com/d_clem_0" target="_blank">
-                    @d_clem_0
-                </a>
-            </div>
-            <div class="contact-link">
-                <a href="https://github.com/d-clem" target="_blank">
-                    d-clem
-                </a>
-            </div>
-
-
+            <a href="https://github.com/cleeem" target="_blank">
+                <span class="fa-brands fa-github icon"></span>
+                cleeem
+            </a>
+            <a href="https://twitter.com/d_clem_0" target="_blank">
+                <span class="fa-brands fa-twitter icon"></span>
+                d_clem_0
+            </a>
         </div>
 
-        <div id="creation">
-            Site crée par Clément Denamiel
-        </div>
-
-    </div>
-
+    </footer>
 </body>
 </html>

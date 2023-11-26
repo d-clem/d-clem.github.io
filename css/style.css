@@ -1,87 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+
+    --text: #041116;
+    --background: #d2d2d2;
+    --primary: #292955;
+    --secondary: #b2bbd1;
+    --accent: #194ccc;
+    
+    --font-family: 'Manrope', sans-serif;
+    --font-size: 25px;
+
+
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    
 }
 
 body {
-    background-color: rgb(100,100,100);
-    display: flex;
-    flex-direction: column;
-    color: white;
+    background-color: var(--background);
 }
 
-a {
 
+main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    margin: calc(2vh) calc(5vw);
+    padding: calc(2vh) calc(2vw);
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 5px;
+}
+
+h1 {
+    font-size: calc(var(--font-size) * 1.75);
+}
+
+h2 {
+    font-size: calc(var(--font-size) * 1.5);
+}
+
+h3 {
+    font-size: calc(var(--font-size) * 1.25);
+}
+
+h4 {
+    font-size: var(--font-size);
+}
+
+h5 {
+    font-size: calc(var(--font-size) * 0.75);
+}
+
+h6 {
+    font-size: calc(var(--font-size) * 0.5);
 }
 
 p {
-
+    font-size: var(--font-size);
+    text-align: justify;
 }
 
-img {
-
-}
 
 button {
+    font-size: calc(var(--font-size) * 0.7);
+    height: 40px;
+    width: 200px;
     border: none;
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
 }
 
 
 
-.welcome {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.navigation {
-    height: 100px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    color: black;
-}
-
-.navigation > a {
-    width: 20%;    
-    height: 30%;
+a {
+    position: relative;
     text-decoration: none;
+    color: var(--accent);
 }
 
-.navigation > a > button {
-    background-color: rgb(120, 120, 120);
-    color: white;
-}
-
-.navigation > a > button:hover {
+a:hover {
     cursor: pointer;
 }
 
-.navigation > a > button:active {
-    background-color: rgb(200, 200, 200);
+a::before {
+    content: '';
+    position: absolute;
+    bottom: -6px; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: var(--accent); 
+    transition: 0.5s ease ; 
 }
 
-
-.presentation {
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 30px;
-}
-
-#projects {
-    margin-top: 20%;
-}
-
-.project-card > div >img {
+a:hover::before {
     width: 100%;
 }
 
 
+img {
+    width: 100%;
+    height: auto;
+}
 
-
+.accents {
+    color: var(--accent);
+}

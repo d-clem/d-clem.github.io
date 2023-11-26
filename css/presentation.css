@@ -1,0 +1,13 @@
+#presentation {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+#imagePresentation {
+    border-radius: 50%;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+}
