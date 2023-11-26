@@ -3,9 +3,15 @@
     color: var(--background);
 }
 
+.texte-presentation, .image-presentation {
+    margin: calc(2vh) calc(5vw);
+    padding: calc(2vh) calc(2vw);
+}
+
 #imagePresentation {
     border-radius: 50%;
 }
+
 
 .split {
     display: grid;
