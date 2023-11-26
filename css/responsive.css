@@ -52,6 +52,7 @@
     .contact {
         flex-direction: column;
     }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -64,5 +65,8 @@
 }
 
 @media screen and (max-width: 560px) {
-    
+    nav {
+        margin: calc(3vh) 0;
+        padding: 0;
+    }
 }
