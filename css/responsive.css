@@ -41,16 +41,16 @@
         text-align: center; 
     }
 
-    #imagePresentation {
-        width: 50%;
-    }
-
     footer {
         height: 500px;    
     }
 
     .contact {
         flex-direction: column;
+    }
+
+    .icon-dev {
+        font-size: calc(var(--font-size) * 1.5);
     }
 
 }
@@ -64,6 +64,10 @@
     nav {
         margin: calc(3vh) 0;
         padding: 0;
+    }
+
+    nav > a {
+        font-size: calc(var(--font-size) * .9);
     }
 
 }

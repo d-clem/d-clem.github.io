@@ -1,6 +1,6 @@
 #presentation {
     background-color: var(--primary);
-    color: var(--background);
+    color: var(--text);
 }
 
 .texte-presentation, .image-presentation {
