@@ -23,6 +23,10 @@
     border-radius: 25px;
 }
 
+.description-projet p {
+    text-align: left;
+}
+
 .description-droite {
     grid-column: 4 / 6;
 }
@@ -61,6 +65,7 @@
 
     font-size: calc(var(--font-size) * 2);
     font-family: var(--font-family);
+    color: var(--accent);
 }
 
 

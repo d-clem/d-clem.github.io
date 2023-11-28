@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
 
-    --text: #121714;
-    --background: #FCFDFC;
-    --primary: #19cc6d;
-    --secondary: #D6CCCC;
-    --accent: #1D6BAF;
+    --text: #e3e8e3;
+    --background: #292955;
+    --primary: #343466;
+    --secondary: #000023;
+    --accent: #56dcfc;
+    
 
     
     --font-family: 'Manrope', sans-serif;
@@ -17,6 +18,11 @@
 
     font-size: var(--font-size);
     font-family: var(--font-family);
+    color: var(--text);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
