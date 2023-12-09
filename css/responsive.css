@@ -1,7 +1,4 @@
 
-
-
-
 @media screen and (max-width: 1200px)  {
     main {
         width: 90%;
@@ -31,8 +28,19 @@
         width: fit-content;
     }
 
-    
+    #contact {
 
+        height: 350px;
+
+        & ul {
+            height: max-content;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {

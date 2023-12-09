@@ -26,3 +26,22 @@ footer {
 
     gap: 1em;
 }
+
+#contact {
+    & ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & li {
+        font-size: calc(var(--font-size) * 1.5);
+        display: inherit;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+}
+}
