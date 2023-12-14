@@ -1,19 +1,31 @@
+#bienvenue {
+    text-align: center;
+}
+
 header {
     margin-top: calc(3vh);
     text-align: center;
 }
 
 nav {
+    position: fixed;
+    top: 0;
+
+    width: calc(100%);
+
+    background-color: var(--primary);
+
     display: flex;
     align-items: center;
     justify-content: left;
     gap: calc(3vw);
 
-    margin: calc(2vh) calc(5vw);
     padding: calc(2vh) calc(2vw);
 
     border-top: 1px solid var(--text);
     border-bottom: 1px solid var(--text);
 
     font-size: calc(var(--font-size) * 1.25);
+
+    z-index: 999;
 }
