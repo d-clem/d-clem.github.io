@@ -28,18 +28,13 @@
         width: fit-content;
     }
 
-    #contact {
+    footer > ul {
+        height: max-content;
 
-        height: 350px;
-
-        & ul {
-            height: max-content;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1em;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
     }
 }
 
@@ -53,14 +48,6 @@
         display: grid;
         grid-template-columns: 1fr;
         text-align: center; 
-    }
-
-    footer {
-        height: 500px;    
-    }
-
-    .contact {
-        flex-direction: column;
     }
 
     .icon-dev {

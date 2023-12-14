@@ -1,5 +1,5 @@
 footer {
-    height: 300px;
+    height: max-content;
     width: 100%;
     background-color: var(--secondary);
 
@@ -27,8 +27,7 @@ footer {
     gap: 1em;
 }
 
-#contact {
-    & ul {
+footer > ul {
     width: 100%;
     list-style: none;
     display: flex;
@@ -36,12 +35,13 @@ footer {
     align-items: center;
     justify-content: space-evenly;
 
-    & li {
-        font-size: calc(var(--font-size) * 1.5);
-        display: inherit;
-        flex-direction: column;
-        gap: 0.5em;
-    }
 
 }
+
+footer > ul > li {
+    font-size: calc(var(--font-size) * 1.5);
+    display: inherit;
+    flex-direction: column;
+    gap: 0.5em;
 }
+
