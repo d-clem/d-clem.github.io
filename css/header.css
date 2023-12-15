@@ -29,3 +29,7 @@ nav {
 
     z-index: 999;
 }
+
+nav > a {
+    color: var(--text);
+}
